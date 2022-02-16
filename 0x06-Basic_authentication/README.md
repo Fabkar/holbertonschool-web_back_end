@@ -1,1 +1,1 @@
-# 0x06. Basic authentication
+## 0x06. Basic authentication
