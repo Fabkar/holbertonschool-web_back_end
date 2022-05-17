@@ -1,5 +1,10 @@
--- Ranks fans
-SELECT origin, SUM(fans) as nb_fans
-FROM metal_bands
-GROUP BY origin
-ORDER BY nb_fans DESC;
+-- sql script docs
+SELECT
+	origin,
+	SUM(fans) as nb_fans
+FROM
+	metal_bands
+group by
+	origin
+order by
+	nb_fans DESC;
