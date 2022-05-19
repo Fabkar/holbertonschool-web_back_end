@@ -1,11 +1,11 @@
-#!/usr/bin/node
+process.stdout.write('Welcome to Holberton School, what is your name?\n');
+
 process.stdin.setEncoding('utf8');
 
-process.stdout.write('Welcome to Holberton School, what is your name?\n');
 process.stdin.on('readable', () => {
-  const read = process.stdin.read();
-  if (read !== null) {
-    process.stdout.write(`Your name is: ${read}`);
+  const chunk = process.stdin.read();
+  if (chunk !== null) {
+    process.stdout.write(`Your name is: ${chunk}`);
   }
 });
 
